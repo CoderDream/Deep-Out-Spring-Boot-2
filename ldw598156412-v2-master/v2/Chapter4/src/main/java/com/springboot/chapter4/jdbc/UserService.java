@@ -17,7 +17,7 @@ public class UserService {
 		int result = 0;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/chapter3", "root", "123456");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:33006/chapter3", "root", "root");
 			//非自动提交事务
 			conn.setAutoCommit(false);
 			result = userDao.insertUser(conn, user);

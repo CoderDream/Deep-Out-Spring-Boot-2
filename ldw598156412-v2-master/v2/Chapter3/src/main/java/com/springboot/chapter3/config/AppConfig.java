@@ -44,9 +44,9 @@ public class AppConfig {
 	public DataSource getDevDataSource() {
 		Properties props = new Properties();
 		props.setProperty("driver", "com.mysql.jdbc.Driver");
-		props.setProperty("url", "jdbc:mysql://localhost:3306/dev_spring_boot");
+		props.setProperty("url", "jdbc:mysql://localhost:33006/dev_spring_boot");
 		props.setProperty("username", "root");
-		props.setProperty("password", "123456");
+		props.setProperty("password", "root");
 		DataSource dataSource = null;
 		try {
 			dataSource = BasicDataSourceFactory.createDataSource(props);
